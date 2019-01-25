@@ -1,0 +1,17 @@
+.parasllax {
+	background-image: url(./images/junctioncrew.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+	height: 100%;
+	z-index: 1;
+}
+.parallax2 {
+	background-image: url(./images/performance.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+	height: 100%;
+	z-index: 1;
+}
+
