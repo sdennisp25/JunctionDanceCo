@@ -1,5 +1,7 @@
 .nav-wrapper {
-	background-color: #008080;
+	background-color: black;
 	text-align: center;
 	margin: 0 auto;
+	font-size: 30px;
+	font-family: 'Lobster', cursive;
 }
