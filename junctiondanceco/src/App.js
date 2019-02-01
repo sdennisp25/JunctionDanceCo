@@ -6,9 +6,9 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
+import Events from "./components/Events";
 
 import "./App.css";
-import { formatWithOptions } from "util";
 
 class App extends Component {
   render() {
@@ -18,12 +18,12 @@ class App extends Component {
         <Container>
           <Parallax
             // blur={10}
-            bgImage={require("../src/components/Jumbotron/images/junctioncrew.jpeg")}
+            bgImage={require("../src/images/junctioncrew.jpeg")}
             bgImageAlt="the crew"
             strength={200}
             style={{
               margin: "1% 0 0 0",
-              width: "100%"
+							height: "50%"
             }}
           >
             <div
@@ -33,9 +33,11 @@ class App extends Component {
             />
           </Parallax>
           <About />
+          <Gallery />
+					<Events />
           <Parallax
             // blur={10}
-            bgImage={require("../src/components/Jumbotron/images/performance.jpeg")}
+            bgImage={require("../src/images/performance.jpeg")}
             bgImageAlt="the crew"
             strength={200}
           >
@@ -45,8 +47,7 @@ class App extends Component {
               }}
             />
           </Parallax>
-          <Gallery />
-					<Contact />
+          <Contact />
           <Footer />
         </Container>
       </React.Fragment>

@@ -1,0 +1,17 @@
+.events-background {
+  text-align: center;
+  height: 100%;
+}
+
+.events {
+  border: 1px solid black;
+  height: 100%;
+}
+
+a {
+  z-index: 0;
+}
+
+.event-image {
+  text-align: center;
+}
