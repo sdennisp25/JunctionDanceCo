@@ -1,28 +1,47 @@
 import React from "react";
 import "./events.css";
+import { Link } from "react-router-dom";
 
 const Events = props => (
   <div className="events-background">
-    <h3>Upcoming Show!</h3>
     <div className="row">
       <div className="col s12 m6">
-        <img className="event-image" src={require("./images/rebirth.png")} />
+        <h3>Upcoming Show</h3>
+        <img
+          className="event-image"
+          alt=""
+          src={require("./images/rebirth.png")}
+        />
       </div>
       <div className="col s12 m6">
+        <h3>Location</h3>
         <div className="events">
-          <h4>REBIRTH</h4>
-          <h6>Mar 29 at 7:30 PM – Mar 31 at 7:30 PM</h6>
-          <br />
-          <h6>Rose Wagner Performing Arts Center</h6>
-          <h6>138 W Broadway, Salt Lake City, Utah 84101</h6>
-          <a
-            href="https://arttix.artsaltlake.org/single/EventDetail.aspx?p=22701"
+          <Link
+            to="https://www.google.com/maps/place/Rose+Wagner+Performing+Arts+Center/@40.7632117,-111.8978368,17z/data=!3m1!4b1!4m5!3m4!1s0x87528a55f13d8fa5:0x1c0bec6b46008e67!8m2!3d40.7632117!4d-111.8956481"
             target="_blank"
-            class="waves-effect waves-light btn-small"
           >
-            Buy Tickets
-          </a>
+            <img
+              className="event-image"
+              alt=""
+              src={require("./images/event.png")}
+            />
+          </Link>
         </div>
+
+        <Link
+          to="https://www.google.com/maps/place/Rose+Wagner+Performing+Arts+Center/@40.7632117,-111.8978368,17z/data=!3m1!4b1!4m5!3m4!1s0x87528a55f13d8fa5:0x1c0bec6b46008e67!8m2!3d40.7632117!4d-111.8956481"
+          target="_blank"
+          class=" event-button waves-effect waves-light btn-large"
+        >
+          Directions
+        </Link>
+        <Link
+          to="https://arttix.artsaltlake.org/single/EventDetail.aspx?p=22701"
+          target="_blank"
+          class="event-button waves-effect waves-light btn-large"
+        >
+          Buy Tickets
+        </Link>
       </div>
     </div>
   </div>

@@ -1,56 +1,22 @@
 import React, { Component } from "react";
-import { Container } from "./components/Grid";
-import { Parallax } from "react-parallax";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import About from "./components/About";
-import Gallery from "./components/Gallery";
-import Contact from "./components/Contact";
-import Events from "./components/Events";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./pages/Home/home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+
 
 import "./App.css";
 
 class App extends Component {
   render() {
     return (
-      <React.Fragment>
-        <Header />
-        <Container>
-          <Parallax
-            // blur={10}
-            bgImage={require("../src/images/junctioncrew.jpeg")}
-            bgImageAlt="the crew"
-            strength={200}
-            style={{
-              margin: "1% 0 0 0",
-							height: "50%"
-            }}
-          >
-            <div
-              style={{
-                height: "350px"
-              }}
-            />
-          </Parallax>
-          <About />
-          <Gallery />
-					<Events />
-          <Parallax
-            // blur={10}
-            bgImage={require("../src/images/performance.jpeg")}
-            bgImageAlt="the crew"
-            strength={200}
-          >
-            <div
-              style={{
-                height: "300px"
-              }}
-            />
-          </Parallax>
-          <Contact />
-          <Footer />
-        </Container>
-      </React.Fragment>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/contact" component={Contact} />
+        </Switch>
+      </Router>
     );
   }
 }
