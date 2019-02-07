@@ -11,28 +11,28 @@ class Home extends Component {
     return (
       <React.Fragment>
         <Header />
-        <Container>
-          <Parallax
-            // blur={10}
-            bgImage={require("./images/junctioncrew.jpeg")}
-            bgImageAlt="the crew"
-            strength={100}
+        <Parallax
+          // blur={10}
+          bgImage={require("./images/junctionlogo.jpeg")}
+          bgImageAlt="the crew"
+          strength={500}
+          style={{
+            height: "50%",
+            // margin: "1% 0 0 0"
+          }}
+          message={"Hello"}
+        >
+          <div
             style={{
-							height: "50%",
-							margin: "1% 0 0 0"
+              height: "500px",
+              backgroundColor: "rgba(0,0,0,0.4)"
             }}
-          >
-            <div
-              style={{
-                height: "450px",
-								backgroundColor: "rgba(0,0,0,0.4)"
-              }}
-            />
-          </Parallax>
+          />
+        </Parallax>
+        <Container>
           <Events />
-          <Gallery />
-          {/* <Parallax
-            bgImage={require("./images/performance.jpeg")}
+          <Parallax
+            bgImage={require("../../pages/About/images/performance.jpeg")}
             bgImageAlt="the crew"
             strength={200}
           >
@@ -41,7 +41,8 @@ class Home extends Component {
                 height: "300px"
               }}
             />
-          </Parallax> */}
+          </Parallax>
+          <Gallery />
           <Footer />
         </Container>
       </React.Fragment>

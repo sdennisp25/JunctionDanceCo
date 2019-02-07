@@ -31,14 +31,14 @@ const Events = props => (
         <Link
           to="https://www.google.com/maps/place/Rose+Wagner+Performing+Arts+Center/@40.7632117,-111.8978368,17z/data=!3m1!4b1!4m5!3m4!1s0x87528a55f13d8fa5:0x1c0bec6b46008e67!8m2!3d40.7632117!4d-111.8956481"
           target="_blank"
-          class=" event-button waves-effect waves-light btn-large"
+          className=" event-button waves-effect waves-light btn-large"
         >
           Directions
         </Link>
         <Link
           to="https://arttix.artsaltlake.org/single/EventDetail.aspx?p=22701"
           target="_blank"
-          class="event-button waves-effect waves-light btn-large"
+          className="event-button waves-effect waves-light btn-large"
         >
           Buy Tickets
         </Link>
