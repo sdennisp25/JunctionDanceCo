@@ -10,6 +10,7 @@ class Contact extends Component {
     return (
       <React.Fragment>
         <Header />
+				<h1>Sponsors</h1>
         {/* <div className="contact-background">
           <div className="row">
             <div className="col s12 m4">

@@ -1,5 +1,21 @@
+.herc {
+	width: 150px;
+	height: 50px;
+	margin-right: 1%;
+	background-color:white;
+}
+.millennium {
+	width: 120px;
+	height: 50px;
+	margin-right: 1%;
+	background-color:white;
+}
+.emotion {
+	width: 120px;
+	height: 50px;
+}
+
 .footer {
-	position: fixed;
 	width: 100%;
 	bottom: 0;
 	left: 0;
@@ -16,12 +32,12 @@
   animation: fadein 1s;
 }
 
-.row {
-	margin-bottom: 0;
+.sponsors {
+	/* margin-top: -6%; */
 }
 
-.logo {
-	margin-right: 1%;
+.row {
+	margin-bottom: 0;
 }
 
 @keyframes fadein {
