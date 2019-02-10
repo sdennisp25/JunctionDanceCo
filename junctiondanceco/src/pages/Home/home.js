@@ -8,47 +8,43 @@ import Gallery from "../../components/Gallery";
 import Events from "../../components/Events";
 import "./home.css";
 
-class Home extends Component {
-  render() {
-    return (
-      <React.Fragment>
-        <Header />
-        <Parallax
-          // blur={10}
-          bgImage={require("./images/junctionlogo.jpeg")}
-          bgImageAlt="the crew"
-					strength={500}
-					renderLayer={percentage => (
-						<div
-								style={{
-										position: 'absolute',
-										background: `rgba(0,0,0,0.3)`,
-										// left: '50%',
-										// top: '50%',
-										width: "100%",
-										height: "100%",
-								}}
-						/>
-				)}
-        >
-          <div
-            style={{
-							height: "300px",
-
-            }}
-          />
-          <div className="logo-header">
-            <h5>"Connecting Lives Through Performance and Outreach"</h5>
-            <Link to={"/about"} class="waves-effect waves-light btn">Upcoming Classes!</Link>
-          </div>
-        </Parallax>
-        <Container>
-          <Events />
-          <Gallery />
-        </Container>
-        <Footer />
-      </React.Fragment>
-    );
-  }
-}
+const Home = props => (
+  <React.Fragment>
+    <Header />
+    <Parallax
+			blur={1}
+			zoomOut={3}
+      bgImage={require("./images/junctionlogo.jpeg")}
+      bgImageAlt="the crew"
+      strength={600}
+      renderLayer={percentage => (
+        <div
+          style={{
+            position: "absolute",
+            background: `rgba(0,0,0,0.3)`,
+            width: "100%",
+            height: "100%"
+          }}
+        />
+      )}
+    >
+      <div
+        style={{
+          height: "400px"
+        }}
+      />
+      <div className="logo-header">
+        <h5>"Connecting Lives Through Performance and Outreach"</h5>
+        <Link to={"/classes"} class="waves-effect waves-light btn">
+          Upcoming Classes!
+        </Link>
+      </div>
+    </Parallax>
+    <Container>
+      <Events />
+      <Gallery />
+    </Container>
+    <Footer />
+  </React.Fragment>
+);
 export default Home;

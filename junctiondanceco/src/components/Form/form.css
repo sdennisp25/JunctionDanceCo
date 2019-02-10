@@ -1,15 +1,17 @@
 h3 {
-  text-align: center;
+	text-align: center;
 }
 
 input {
-  color: black;
+	color: black;
 }
 
-form {
-	margin: 2% 0 10% 0;
+.form {
+	padding: 10%;
+	margin: 5.5% 0 10% 0;
 	background-color: white;
 	border: solid black;
+	padding-bottom: 10px;
 }
 .form-card {
 	margin: 4% 0 10% 0;
@@ -17,3 +19,9 @@ form {
 	border: solid black;
   z-index: 1;
 }
+
+.btn-small {
+	width: 100%;
+}
+
+

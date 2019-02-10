@@ -7,11 +7,6 @@
   width: 100%;
 }
 
-h3, h7 {
+h7 {
   font-family: "Lobster", cursive;
-}
-
-.image {
-	width: 100%;
-	border-radius: 20%;
 }

@@ -7,7 +7,13 @@ class Form extends Component {
     return (
       <React.Fragment>
         <div className="row">
-          <form className="col s6">
+          <div className="col s2" />
+          <form
+            className="form col s8"
+            method="GET"
+            action="mailto:sdennisp25@hotmail.com"
+            enctype="text/plain"
+          >
             <h3>Questions?</h3>
             <div className="row">
               <div className="input-field col s6">
@@ -47,16 +53,12 @@ class Form extends Component {
                 <span className="helper-text">Message</span>
               </div>
             </div>
+            <input
+              type="submit"
+              value="Send Message"
+              class="waves-effect waves-light btn-small"
+            />
           </form>
-          {/* <div className="col s6 m6">
-            <div className="card">
-              <div className="form-image" />
-            </div>
-          </div> */}
-
-          <div className="col s12 m6">
-            <img src={JunctionLogo} class="form-card" alt="junctino logo" />
-          </div>
         </div>
       </React.Fragment>
     );
