@@ -5,6 +5,7 @@ import { Parallax } from "react-parallax";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Megan from "../../components/Megan";
+import Gallery from "../../components/Gallery";
 
 const About = props => (
   <React.Fragment>
@@ -31,11 +32,50 @@ const About = props => (
       >
         <div
           style={{
-            height: "400px"
+            height: "400px",
+            width: "500px"
           }}
         />
       </Parallax>
+      <div className="row">
+        <div className="col s7">
+          <Parallax
+            bgImage={require("./images/kids2.png")}
+            bgImageAlt="the crew"
+            strength={125}
+            style={{
+              margin: "1% 0 0 0"
+            }}
+          >
+            <div
+              style={{
+                height: "300px",
+              }}
+            />
+          </Parallax>
+        </div>
+        <div className="col s5">
+          <Parallax
+            bgImage={require("./images/junction2.jpg")}
+            bgImageAlt="the crew"
+            strength={100}
+            style={{
+              margin: "1% 0 0 0",
+              justifyContent: "center",
+              alignItems: "center"
+            }}
+          >
+            <div
+              style={{
+                height: "300px"
+              }}
+            />
+          </Parallax>
+        </div>
+      </div>
       <Megan />
+			<h3>Gallery</h3>
+			<Gallery />
     </Container>
     <Footer />
   </React.Fragment>

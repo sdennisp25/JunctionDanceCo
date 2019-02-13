@@ -10,11 +10,20 @@ nav {
 	animation: fadein 1s;
 }
 
+.list {
+	margin-right: 1%;
+}
+
+.brand-logo {
+	margin-left: 1%;
+	font-family: 'Anton', sans-serif;
+	font-weight: 40px;
+
+}
 
 .nav-wrapper {
   background-color: black;
   font-size: 30px;
-  font-family: "Lobster", cursive;
 }
 
 @keyframes fadein {

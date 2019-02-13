@@ -30,8 +30,8 @@ class Header extends Component {
 						style={{ ...styles, opacity: this.state.opacity }}
 						onScroll={this.handleScroll}
           >
-            <div className="brand-logo left">Junction Dance Company</div>
-            <ul className="right hide-on-med-and-down">
+            <div className="brand-logo left">Junction Dance Co</div>
+            <ul className="list right hide-on-med-and-down">
               <li>
                 <Link to={"/"}>Home</Link>
               </li>

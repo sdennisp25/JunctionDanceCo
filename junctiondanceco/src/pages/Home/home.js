@@ -1,19 +1,18 @@
-import React, { Component } from "react";
+import React from "react";
 import { Container } from "../../components/Grid";
 import { Parallax } from "react-parallax";
 import { Link } from "react-router-dom";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import Gallery from "../../components/Gallery";
+// import Gallery from "../../components/Gallery";
 import Events from "../../components/Events";
+import Upcoming from "../../components/Upcoming";
 import "./home.css";
 
 const Home = props => (
   <React.Fragment>
     <Header />
     <Parallax
-			blur={1}
-			zoomOut={3}
       bgImage={require("./images/junctionlogo.jpeg")}
       bgImageAlt="the crew"
       strength={600}
@@ -42,7 +41,8 @@ const Home = props => (
     </Parallax>
     <Container>
       <Events />
-      <Gallery />
+      {/* <Gallery /> */}
+			<Upcoming />
     </Container>
     <Footer />
   </React.Fragment>

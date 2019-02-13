@@ -23,6 +23,7 @@ a {
 	height: 100%;
 	width: 100%;
 	margin: 3% 0 0 0;
+	z-index: 0;
 }
 .event-image {
 	text-align: center;
@@ -38,5 +39,4 @@ h3 {
 	border-top: 5px solid rgb(252,194,1,0.5);
 	border-bottom: 5px solid rgb(252,194,1,0.5);
 	background-color: rgb(0,0,0,0.4);
-
 }
