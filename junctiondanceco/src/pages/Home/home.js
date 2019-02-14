@@ -14,12 +14,12 @@ const Home = props => (
     <Parallax
       bgImage={require("./images/junctionlogo.jpeg")}
       bgImageAlt="the crew"
-      strength={600}
+      strength={150}
       renderLayer={percentage => (
         <div
           style={{
             position: "absolute",
-            background: `rgba(0,0,0,0.2)`,
+            background: `rgba(0,0,0,0.6)`,
             width: "100%",
             height: "100%"
           }}
@@ -28,15 +28,20 @@ const Home = props => (
     >
       <div
         style={{
-          height: "400px"
+          height: "350px"
         }}
       />
-      <div className="logo-header">
-        <h5>"Connecting Lives Through Performance and Outreach"</h5>
+      <div className="logo-box">
+        <h5 className="logo-title">
+          "Connecting Lives Through Performance and Outreach"
+        </h5>
+        <hr />
         <Link to={"/classes"} class="waves-effect waves-light btn">
           Upcoming Classes!
         </Link>
       </div>
+      {/* <div className="logo-header"> */}
+      {/* </div> */}
     </Parallax>
     <Container>
       <Events />

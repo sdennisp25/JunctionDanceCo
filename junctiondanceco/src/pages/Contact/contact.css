@@ -2,7 +2,9 @@
   margin-top: 0;
   margin-bottom: 10%;
 }
-.contact, .follow, .donate {
+.contact,
+.follow,
+.donate {
   text-align: center;
   width: 100%;
 }
@@ -10,3 +12,4 @@
 h7 {
   font-family: "Lobster", cursive;
 }
+

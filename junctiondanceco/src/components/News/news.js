@@ -33,7 +33,7 @@ class News extends Component {
                 <div className="card-content">
                   <p>
                     We have a big surprise coming up in the near future! We
-                    cannot wait to announce this.
+                    cannot wait to share this with you all.
                   </p>
                 </div>
               </div>
