@@ -5,7 +5,6 @@ import { Parallax } from "react-parallax";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Megan from "../../components/Megan";
-import Gallery from "../../components/Gallery";
 
 const About = props => (
   <React.Fragment>
@@ -13,14 +12,14 @@ const About = props => (
     <Container>
       <div className="about">
         <h3>About Us</h3>
-        <h6>
+        <p>
           Junction Dance Company is a diverse group of talented individuals that
           came together to unite all styles of dance. Passionately driven to
           spread the love for the art of dance by performing at charity events,
           benefit concerts, parades, and competitions. We strive to create unity
           in the dance community and by connecting others who have yet to
           experience the same passion.
-        </h6>
+        </p>
       </div>
       <Parallax
         bgImage={require("./images/junctioncrew.jpeg")}
@@ -74,8 +73,6 @@ const About = props => (
         </div>
       </div>
       <Megan />
-			<h3>Gallery</h3>
-			<Gallery />
     </Container>
     <Footer />
   </React.Fragment>

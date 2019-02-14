@@ -4,9 +4,8 @@ import { Parallax } from "react-parallax";
 import { Link } from "react-router-dom";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-// import Gallery from "../../components/Gallery";
 import Events from "../../components/Events";
-import Upcoming from "../../components/Upcoming";
+import News from "../../components/News";
 import "./home.css";
 
 const Home = props => (
@@ -20,7 +19,7 @@ const Home = props => (
         <div
           style={{
             position: "absolute",
-            background: `rgba(0,0,0,0.3)`,
+            background: `rgba(0,0,0,0.2)`,
             width: "100%",
             height: "100%"
           }}
@@ -41,8 +40,7 @@ const Home = props => (
     </Parallax>
     <Container>
       <Events />
-      {/* <Gallery /> */}
-			<Upcoming />
+      <News />
     </Container>
     <Footer />
   </React.Fragment>

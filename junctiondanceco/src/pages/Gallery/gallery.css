@@ -1,8 +1,14 @@
 .card-gallery {
-	height: 200px;
+	height: 230px;
 	width: 100%;
 	margin: 2% 0 0 0;
+	box-shadow: 3px 3px 10px;
 }
+
+.gallery-box {
+	padding-top: 3.5%;
+}
+
 .image1 {
   background-image: url(./images/andrew.jpeg);
   background-repeat: no-repeat;
@@ -54,7 +60,29 @@
 	z-index: 1;
 }
 .image6 {
-  background-image: url(./images/terry.jpeg);
+  background-image: url(./images/audrey.jpeg);
+  background-repeat: no-repeat;
+	background-size: cover;
+  background-position: 70% 65%; 
+
+	width: 100%;
+  height: 100%;
+  margin: 0;
+	z-index: 1;
+}
+.image7 {
+  background-image: url(./images/paige.jpg);
+  background-repeat: no-repeat;
+	background-size: cover;
+  background-position: 70% 65%; 
+
+	width: 100%;
+  height: 100%;
+  margin: 0;
+	z-index: 1;
+}
+.image8 {
+  background-image: url(./images/renken.jpg);
   background-repeat: no-repeat;
 	background-size: cover;
   background-position: 70% 65%; 
