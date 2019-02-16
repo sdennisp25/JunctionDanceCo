@@ -21,9 +21,9 @@ class News extends Component {
                     towards Junction Dance Co!
                   </p>
                 </div>
-                <div className="card-action">
+                {/* <div className="card-action">
                   <a href="#">Learn more</a>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col s12 m3">

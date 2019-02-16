@@ -36,7 +36,7 @@ const Home = props => (
           "Connecting Lives Through Performance and Outreach"
         </h5>
         <hr />
-        <Link to={"/classes"} class="waves-effect waves-light btn">
+        <Link to={"/classes"} className="waves-effect waves-light btn">
           Upcoming Classes!
         </Link>
       </div>
