@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/JunctionDanceCo/precache-manifest.8984a01285782c86250a6979fbad384d.js"
+  "/JunctionDanceCo/precache-manifest.93a696fe2c2b0f2724dc8fc5f27a39d6.js"
 );
 
 workbox.clientsClaim();
